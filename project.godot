@@ -8,8 +8,95 @@
 
 config_version=5
 
+_global_script_classes=[{
+"base": "RefCounted",
+"class": &"Battle",
+"language": &"GDScript",
+"path": "res://resource/battle/battle.gd"
+}, {
+"base": "RefCounted",
+"class": &"CMD",
+"language": &"GDScript",
+"path": "res://resource/battle/cmd.gd"
+}, {
+"base": "CMD",
+"class": &"CMD_Use",
+"language": &"GDScript",
+"path": "res://resource/battle/cmd/use.gd"
+}, {
+"base": "Resource",
+"class": &"Card",
+"language": &"GDScript",
+"path": "res://resource/card/card.gd"
+}, {
+"base": "Card",
+"class": &"Character",
+"language": &"GDScript",
+"path": "res://resource/card/character.gd"
+}, {
+"base": "Resource",
+"class": &"Deck",
+"language": &"GDScript",
+"path": "res://resource/deck.gd"
+}, {
+"base": "Character",
+"class": &"Enemy",
+"language": &"GDScript",
+"path": "res://resource/card/enemy.gd"
+}, {
+"base": "RefCounted",
+"class": &"Event",
+"language": &"GDScript",
+"path": "res://resource/card/function/event.gd"
+}, {
+"base": "RefCounted",
+"class": &"Fighter",
+"language": &"GDScript",
+"path": "res://resource/card/function/figter.gd"
+}, {
+"base": "Resource",
+"class": &"Journey",
+"language": &"GDScript",
+"path": "res://resource/journey.gd"
+}, {
+"base": "Resource",
+"class": &"Map",
+"language": &"GDScript",
+"path": "res://resource/map.gd"
+}, {
+"base": "Character",
+"class": &"Player",
+"language": &"GDScript",
+"path": "res://resource/card/player.gd"
+}, {
+"base": "RefCounted",
+"class": &"Skill",
+"language": &"GDScript",
+"path": "res://resource/card/function/skill.gd"
+}]
+_global_script_class_icons={
+"Battle": "",
+"CMD": "",
+"CMD_Use": "",
+"Card": "",
+"Character": "",
+"Deck": "",
+"Enemy": "",
+"Event": "",
+"Fighter": "",
+"Journey": "",
+"Map": "",
+"Player": "",
+"Skill": ""
+}
+
 [application]
 
 config/name="CardGame"
 config/icon="res://icon.png"
 config/features=PackedStringArray("4.0", "Vulkan Clustered")
+
+[display]
+
+window/size/width=1280
+window/size/height=720
